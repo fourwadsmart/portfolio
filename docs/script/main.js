@@ -23,5 +23,17 @@ $(document).ready(function() {
         }
 
     });
+    
+    
+    let main = $("#container");
+    let docWidth = $(document).width();
+    console.log(docWidth);
+    
+    if(docWidth < 992) {
+        main.removeClass('container');
+        main.addClass('container-fluid');
+    }
 
 });
+
+
